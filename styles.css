@@ -1,0 +1,102 @@
+/* Things to do:
+Add active states
+Define a modular type scale 
+Make the code cleaner and delete useless designs
+Fix some texts color
+Add image styles to the CSS and delete them from the HTML
+*/
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(225, 100%, 94%);
+  height: 100vh;
+  font-family: "Red Hat Display", "Times New Roman", Times;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 275px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.plan {
+  display: flex;
+  align-self: stretch;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.plan-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.plan-text .plan-type {
+  font-weight: 700;
+}
+
+.plan-text a {
+  font-weight: 700;
+}
+
+.payment-button {
+  font-weight: 700;
+  font-size: 12px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(245, 75%, 52%);
+  align-self: stretch;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 10px 15px rgba(56, 41, 224, 0.25);
+}
+
+.cancel-button {
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 50%);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/*FOOTER*/
+.attribution {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
