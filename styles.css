@@ -1,13 +1,9 @@
-/* Things to do:
-Add active states
-Define a modular type scale 
-Make the code cleaner and delete useless designs
-Fix some texts color
-Add image styles to the CSS and delete them from the HTML
+/* Things to do: 
+Fix the background pattern
 */
 
 
-
+/*GLOBAL STYLES*/
 body {
   display: flex;
   flex-direction: column;
@@ -16,23 +12,33 @@ body {
   font-family: "Red Hat Display", "Times New Roman", Times;
 }
 
+.background-pattern {
+  background-size: contain;
+  height: 225px;
+  width: 100%;
+  background-position: 70px center;
+  background-image: url(images/pattern-background-desktop.svg);
+}
+
 p {
   margin: 0;
   text-align: center;
   font-size: 12px;
+  color: hsl(0, 0%, 48%);
 }
 
 h2 {
+  text-align: center;
   margin: 0;
   font-size: 24px;
 }
 
+/*CONTAINERS*/
 .card {
   display: flex;
   flex-direction: column;
   max-width: 275px;
   margin: auto;
-  box-sizing: border-box;
   background-color: hsl(0, 0%, 100%);
   border-radius: 8px;
   overflow: hidden;
@@ -41,14 +47,13 @@ h2 {
 .card-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 16px;
   padding: 24px;
 }
 
+/*PLAN INFO DIV*/
 .plan {
   display: flex;
-  align-self: stretch;
   gap: 12px;
   padding: 16px;
   border-radius: 8px;
@@ -62,32 +67,56 @@ h2 {
   font-size: 12px;
 }
 
+/*TEXT STYLES*/
 .plan-text .plan-type {
   font-weight: 700;
 }
 
-.plan-text a {
-  font-weight: 700;
+.plan-price {
+  color: hsl(0, 0%, 48%);
 }
 
+.plan-text a {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+.plan-text a:hover {
+  color: rgba(56, 41, 224, 0.7);
+}
+
+/*BUTTON STYLES*/
 .payment-button {
   font-weight: 700;
   font-size: 12px;
   color: hsl(0, 0%, 100%);
   background-color: hsl(245, 75%, 52%);
-  align-self: stretch;
   border: none;
   border-radius: 8px;
   padding: 12px;
-  box-shadow: 0 10px 15px rgba(56, 41, 224, 0.25);
+  box-shadow: 0 8px 15px rgba(56, 41, 224, 0.25);
+}
+
+.payment-button:hover {
+  background-color: rgba(56, 41, 224, 0.7);
+  cursor: pointer;
+}
+.payment-button:active {
+  box-shadow: none;
 }
 
 .cancel-button {
   border: none;
   background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 48%);
   font-weight: 700;
   font-size: 12px;
+}
+
+.cancel-button:hover {
+  color: hsl(0, 0%, 0%);
+  font-weight: 900;
+  cursor: pointer;
 }
 
 /*FOOTER*/

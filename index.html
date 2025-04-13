@@ -22,33 +22,39 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="card">
-      <img src="images/illustration-hero.svg" height="auto" width="275px" />
-      <div class="card-info">
-        <h2>Order Summary</h2>
+    <div class="background-pattern">
+      <!--Order Summary Card container-->
+      <div class="card">
+        <img src="images/illustration-hero.svg" height="auto" width="275px" />
 
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </p>
+        <!--Order Summary (only text) container-->
+        <div class="card-info">
+          <h2>Order Summary</h2>
 
-        <div class="plan">
-          <img src="images/icon-music.svg" width="34px" height="auto" />
-          <div class="plan-text">
-            <div>
-              <span class="plan-type">Annual Plan</span>
-              <span>$59.99/year</span>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <!--Plan information div inside Order Summary-->
+          <div class="plan">
+            <img src="images/icon-music.svg" width="34px" height="auto" />
+            <!--Div to separate svg music icon from plan information text-->
+            <div class="plan-text">
+              <div>
+                <span class="plan-type">Annual Plan</span>
+                <span class="plan-price">$59.99/year</span>
+              </div>
+
+              <a href="https://www.spotify.com/us/premium/#plans">Change</a>
             </div>
-
-            <a href="">Change</a>
           </div>
+          <!--Buttons-->
+          <button class="payment-button">Proceed to Payment</button>
+          <button class="cancel-button">Cancel Order</button>
         </div>
-
-        <button class="payment-button">Proceed to Payment</button>
-        <button class="cancel-button">Cancel Order</button>
       </div>
     </div>
-
+    <!--FOOTER-->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
